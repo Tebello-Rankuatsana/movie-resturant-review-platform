@@ -1,0 +1,14 @@
+##Testing GET /users endpoint
+GET http://localhost:4999/
+
+### Get popular movies
+GET http://localhost:4999/api/movies/search
+
+### Test popular movies
+GET http://localhost:4999/api/movies/popular
+
+### Test search movies
+GET http://localhost:4999/api/movies/search?q=batman
+
+### Test specific movie details
+GET http://localhost:4999/api/movies/550
