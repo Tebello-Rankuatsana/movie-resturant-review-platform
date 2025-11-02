@@ -6,7 +6,11 @@ const movieRoutes = require('./routes/movieData');
 
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+   origin: [
+    'https://movie-review-app-485a8.web.app',
+    'https://movie-review-app-485a8.firebaseapp.com',
+    'http://localhost:3000' // for local development
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
